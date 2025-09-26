@@ -39,8 +39,6 @@ Você pode executar este pipeline de duas maneiras: localmente em sua máquina o
 
 ### 1. Rodando Localmente
 
-Esta abordagem é ideal para testes e desenvolvimento.
-
 #### Pré-requisitos
 * Python 3.11+
 * Git
@@ -117,7 +115,7 @@ Esta abordagem usa Docker e Docker Compose para orquestrar o pipeline com o Apac
 3.  **Acesse a interface do Airflow:**
     * Abra seu navegador e acesse `http://localhost:8080`.
     * Usuário: `admin`.
-    * Senha: o Airflow Standalone gera uma nova senha aleatória a cada build, por isso após subir o contâiner, identifique a senha que foi gerada.
+    * Senha: o Airflow Standalone gera uma nova senha aleatória a cada build, por isso após subir o contâiner, identifique a senha que foi gerada nos logs do contâiner.
 
 4.  **Ative e execute a DAG:**
     * Na lista de DAGs, encontre `etl_movies_dag`.
